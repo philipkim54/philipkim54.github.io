@@ -1,0 +1,71 @@
+html {
+    background: url(../../../static/images/shutterstock_470209412.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner {
+    display: flex;
+    height: 650px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 660px;
+    padding: 0 20px;
+    background: #000;
+}
+
+.banner-left > img {
+    width: 100%;
+}
+
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 660px;
+}
+
+.search-header {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.search-bar {
+    width: 90%;
+    height: 45px;
+}
+
+.search-bar > input {
+    width: 100%;
+    height: 100%;
+}
+
+.main > .section {
+    background: #fff;
+}
+
+.listing-gallery {
+    padding-bottom: 40px;
+}
+
+.listing-gallery-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 100px 0 50px;
+    margin: 10px 0 0 0;
+    color: rgba(26,26,26,.9);
+}
