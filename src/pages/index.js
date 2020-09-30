@@ -3,38 +3,54 @@ import React from "react"
 import Layout from '../components/layout'
 
 import "./style/index.css"
-import logo_white from "../../static/images/logo-white.png"
 
 
-export default function Home() {
-  return (
-    <Layout>
-      <div className="home">
-        <div className="banner">
-          <div className="banner-left">
-            <img src={logo_white} alt="logo-white" />
-          </div>
-          <div className="banner-right">
-            <p className="search-header">
-              Find the home that's special to you, where do you want to live?
-            </p>
-            <span className="search-bar">
-              <input type="text" />
-            </span>
-          </div>
-        </div>
-
-        <div className="main">
-          <div className="listing-gallery section">
-            <h1 className="listing-gallery-header">HOME LISTINGS</h1>
-            <div className="listing-gallery-carousel"></div>
-          </div>
-          <div className="communities section"></div>
-          <div className="testimonials-gallery section"></div>
-          <div className="market-trends section"></div>
-          <div className="bio section"></div>
+const Home = (props) => (
+  <Layout page='home'>
+    <div className="home">
+      <div className='hero'>
+        <div className='welcome-wrapper'>
+          <div className='welcome'>Welcome.</div>
+          <div className='sub-welcome'>Your new home awaits!</div>
         </div>
       </div>
-    </Layout>
-  )
-}
+
+      <div className='main'>
+        <div className='bio'>
+          <div className='container'>
+            <div className='headshot-wrapper'>
+              <img className='headshot' src='https://s3.amazonaws.com/homesnap.users/663897034_300.jpg?1' alt='Phil Kim headshot' />
+            </div>
+            <div className='name'>Philip Kim</div>
+            <div className='intro'>
+              All real estate agents aren't built the same. Those who claim to provide home-buyers and sellers with professional, responsive and attentive real estate services are only doing the bare minimum. Want an agent who'll really listen to what you want in a home? Need an agent who knows how to effectively market your home so it sells? Need an agent to watch your back? Give me a call, let's see if we're a good fit for each other and go from there.
+            </div>
+          </div>
+        </div>
+
+        <div className='contact'>
+          <div className='container'>
+            <div className='contact-me'>Contact Me</div>
+            <div className='contact-info'>
+              <span className='contact-address'>
+                Direct: <a href='tel:917-699-3666'>917.699.3666</a>
+              </span>
+              <span className='contact-address'>
+                Office: <a href='tel:516-922-2878'>516.922.2878</a>
+              </span>
+              <span className='contact-address'>
+                <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>philk@nestseekers.com</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Featured Areas placeholder */}
+
+        {/* My Listings placeholder */}
+      </div>
+    </div>
+  </Layout>
+)
+
+export default Home

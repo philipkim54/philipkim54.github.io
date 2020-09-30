@@ -28,10 +28,19 @@
 
 .nav-link-wrapper {
     margin: 0 20px;
+    text-transform: capitalize;
+}
+
+.current {
+    border-bottom: 3px solid #006dc7;
 }
 
 .nav-link {
     transition: opacity 0.4s;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #006dc7;
 }
 
 @media screen and (max-width: 855px) {

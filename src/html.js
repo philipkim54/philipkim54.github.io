@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand|Montserrat|Raleway:100|Open+Sans+Condensed:300,700|Josefin+Sans:100,600|Sacramento|Dancing+Script|Great+Vibes|Roboto+Slab:700|Lato|Quattrocento|Lora|EB+Garamond" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Montserrat|Raleway:300|Josefin+Sans:400|Roboto+Slab:400|Quattrocento|Lora" rel="stylesheet" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

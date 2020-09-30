@@ -5,15 +5,16 @@ import './style/header.css'
 import logo from '../../static/images/pklogo.jpg'
 
 const LINKS = [
-    { href: '/home', label: 'Home' },
-    { href: '/search', label: 'Search' },
-    { href: '/about', label: 'About' },
-    { href: '/listings', label: 'Listings' },
-    { href: '/sellers', label: 'Sellers' },
-    { href: '/buyers', label: 'Buyers' },
+    {href: '/', label: 'Home'},
+    {href: '/search', label: 'Search'},
+    {href: '/about', label: 'About'},
+    {href: '/listings', label: 'Listings'},
+    {href: '/sellers', label: 'Sellers'},
+    {href: '/buyers', label: 'Buyers'},
 ]
 
-const Header = (props) => (
+
+const Header = ({ page }) => (
     <div className='header'>
         <div className='logo-wrapper'>
             <Link className='home-link' to='/'>
@@ -21,10 +22,10 @@ const Header = (props) => (
             </Link>
         </div>
         <div className='nav'>
-            {LINKS.map((page, i) => (
-                <span key={i} className='nav-link-wrapper'>
-                    <Link className='nav-link' to={page.href}>
-                        {page.label}
+            {LINKS.map((link, i) => (
+                <span key={i} className={link.label.toLowerCase() === page ? 'nav-link-wrapper current' : 'nav-link-wrapper'}>
+                    <Link className='nav-link' to={link.href}>
+                        {link.label}
                     </Link>
                 </span>
             ))}

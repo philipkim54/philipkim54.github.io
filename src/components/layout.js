@@ -3,9 +3,9 @@ import Header from './header'
 
 import './style/layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, page }) => (
     <>
-        <Header />
+        <Header page={page} />
         <div id='app'>
             {children}
         </div>
