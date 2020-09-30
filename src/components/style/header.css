@@ -1,0 +1,90 @@
+.header {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    user-select: none;
+    background-color: #fff;
+}
+
+.logo-wrapper {
+    width: 125px;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.nav {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.nav:hover .nav-link:not(:hover) {
+    opacity: 0.25;
+}
+
+.nav-link-wrapper {
+    margin: 0 20px;
+}
+
+.nav-link {
+    transition: opacity 0.4s;
+}
+
+@media screen and (max-width: 855px) {
+    .home-link {
+        font-size: 26px;
+    }
+    .nav {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .home-link {
+        font-size: 22px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+}
+
+  /* iphone 6/7/8 plus */
+@media screen and (max-width: 414px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .home-link {
+        font-size: 16px;
+        margin: 10px 0 15px 0;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .nav-link-wrapper {
+        margin: 0 5px;
+    }
+}
+
+  /* iphone 6/7/8 */
+  @media screen and (max-width: 375px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .home-link {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .nav {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .nav-link-wrapper {
+        margin: 0 5px;
+    }
+  }
