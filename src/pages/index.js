@@ -1,13 +1,14 @@
-import React from "react"
+import React from 'react'
 
 import Layout from '../components/layout'
 
-import "./style/index.css"
+import './style/index.css'
+import facebook from '../../static/images/f_logo_RGB-Blue_58.png'
 
 
 const Home = (props) => (
   <Layout page='home'>
-    <div className="home">
+    <div className='home'>
       <div className='hero'>
         <div className='welcome-wrapper'>
           <div className='welcome'>Welcome.</div>
@@ -31,6 +32,7 @@ const Home = (props) => (
         <div className='contact'>
           <div className='container'>
             <div className='contact-me'>Contact Me</div>
+
             <div className='contact-info'>
               <span className='contact-address'>
                 Direct: <a href='tel:917-699-3666'>917.699.3666</a>
@@ -41,6 +43,12 @@ const Home = (props) => (
               <span className='contact-address'>
                 <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>philk@nestseekers.com</a>
               </span>
+            </div>
+
+            <div className='social-media'>
+              <a href='https://www.facebook.com/philkrealtor' target='_blank' rel='noreferrer'>
+                <img className='facebook-logo' src={facebook} alt='Facebook' />
+              </a>
             </div>
           </div>
         </div>

@@ -92,6 +92,7 @@
 }
 
 .contact-info {
+    margin-bottom: 25px;
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -104,4 +105,8 @@
 
 .contact-address > a {
     color: #0F50DB;
+}
+
+.facebook-logo {
+    width: 40px;
 }
