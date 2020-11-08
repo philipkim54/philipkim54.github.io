@@ -6,9 +6,9 @@ import './style/about.css'
 
 
 const About = (props) => (
-    <Layout page='about'>
-        <div className='about'>About placeholder</div>
-    </Layout>
+  <Layout page='about'>
+    <div className='about'>About placeholder</div>
+  </Layout>
 )
 
 export default About

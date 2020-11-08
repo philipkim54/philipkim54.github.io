@@ -6,9 +6,9 @@ import './style/listings.css'
 
 
 const Listings = (props) => (
-    <Layout page='listings'>
-        <div className='listings'>Listings placeholder</div>
-    </Layout>
+  <Layout page='listings'>
+    <div className='listings'>Listings placeholder</div>
+  </Layout>
 )
 
 export default Listings

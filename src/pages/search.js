@@ -6,9 +6,9 @@ import './style/search.css'
 
 
 const Search = (props) => (
-    <Layout page='search'>
-        <div className='search'>Search placeholder</div>
-    </Layout>
+  <Layout page='search'>
+    <div className='search'>Search placeholder</div>
+  </Layout>
 )
 
 export default Search

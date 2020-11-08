@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import './style/index.css'
+import headshot from '../../static/images/headshot.jpg'
 import facebook from '../../static/images/f_logo_RGB-Blue_58.png'
 
 
@@ -20,7 +21,7 @@ const Home = (props) => (
         <div className='bio'>
           <div className='container'>
             <div className='headshot-wrapper'>
-              <img className='headshot' src='https://s3.amazonaws.com/homesnap.users/663897034_300.jpg?1' alt='Phil Kim headshot' />
+              <img className='headshot' src={headshot} alt='Phil Kim headshot' />
             </div>
             <div className='name'>Philip Kim</div>
             <div className='intro'>

@@ -6,9 +6,9 @@ import './style/buyers.css'
 
 
 const Buyers = (props) => (
-    <Layout page='buyers'>
-        <div className='buyers'>Buyers placeholder</div>
-    </Layout>
+  <Layout page='buyers'>
+    <div className='buyers'>Buyers placeholder</div>
+  </Layout>
 )
 
 export default Buyers
