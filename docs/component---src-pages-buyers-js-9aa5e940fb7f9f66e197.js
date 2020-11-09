@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"3OkN":function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),r=a.n(t),c=a("Bl7J");a("AHH/");n.default=function(e){return r.a.createElement(c.a,{page:"buyers"},r.a.createElement("div",{className:"buyers"},"Buyers placeholder"))}},"AHH/":function(e,n,a){}}]);
+//# sourceMappingURL=component---src-pages-buyers-js-9aa5e940fb7f9f66e197.js.map
