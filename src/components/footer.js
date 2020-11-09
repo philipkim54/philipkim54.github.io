@@ -30,7 +30,7 @@ const Footer = (props) => (
           <a href='tel:917-699-3666'>917.699.3666</a>
         </div>
         <div className='footer-office'>
-          <i className='fa fa-building fa-lg footer-icon' aria-hiddren='true' />
+          <i className='fa fa-building fa-lg footer-icon' aria-hidden='true' />
           <a href='tel:516-922-2878'>516.922.2878</a>
         </div>
       </div>
