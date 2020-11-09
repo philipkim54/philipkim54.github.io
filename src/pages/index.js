@@ -3,8 +3,8 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import './style/index.css'
-import headshot from '../../static/images/headshot.jpg'
-import facebook from '../../static/images/f_logo_RGB-Blue_58.png'
+import headshot from '../../static/assets/headshot.jpg'
+import facebook from '../../static/assets/f_logo_RGB-Blue_58.png'
 
 
 const Home = (props) => (

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import './style/header.css'
-import logo from '../../static/images/phil_kim_logo.jpg'
+import logo from '../../static/assets/phil_kim_logo.jpg'
 
 const LINKS = [
   {href: '/', label: 'Home'},
