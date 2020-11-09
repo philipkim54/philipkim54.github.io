@@ -6,7 +6,6 @@ import './style/index.less'
 import headshot from '../../static/assets/headshot.jpg'
 import facebook from '../../static/assets/f_logo_RGB-Blue_58.png'
 
-
 const Home = (props) => (
   <Layout page='home'>
     <div className='home'>
@@ -25,7 +24,12 @@ const Home = (props) => (
             </div>
             <div className='name'>Philip Kim</div>
             <div className='intro'>
-              All real estate agents aren't built the same. Those who claim to provide home-buyers and sellers with professional, responsive and attentive real estate services are only doing the bare minimum. Want an agent who'll really listen to what you want in a home? Need an agent who knows how to effectively market your home so it sells? Need an agent to watch your back? Give me a call, let's see if we're a good fit for each other and go from there.
+              All real estate agents aren't built the same. Those who claim to provide home-buyers
+              and sellers with professional, responsive and attentive real estate services are only
+              doing the bare minimum. Want an agent who'll really listen to what you want in a home?
+              Need an agent who knows how to effectively market your home so it sells? Need an agent
+              to watch your back? Give me a call, let's see if we're a good fit for each other and
+              go from there.
             </div>
           </div>
         </div>
@@ -42,7 +46,9 @@ const Home = (props) => (
                 Office: <a href='tel:516-922-2878'>516.922.2878</a>
               </span>
               <span className='contact-address'>
-                <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>philk@nestseekers.com</a>
+                <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>
+                  philk@nestseekers.com
+                </a>
               </span>
             </div>
 

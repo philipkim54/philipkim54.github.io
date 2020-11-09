@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 
 import './style/header.less'
 import logo from '../../static/assets/phil_kim_logo.jpg'
@@ -13,8 +13,7 @@ const LINKS = [
   {href: '/buyers', label: 'Buyers'},
 ]
 
-
-const Header = ({ page }) => (
+const Header = ({page}) => (
   <div className='header'>
     <div className='logo-wrapper'>
       <Link className='home-link' to='/'>
@@ -23,7 +22,11 @@ const Header = ({ page }) => (
     </div>
     <div className='nav'>
       {LINKS.map((link, i) => (
-        <span key={i} className={link.label.toLowerCase() === page ? 'nav-link-wrapper current' : 'nav-link-wrapper'}>
+        <span
+          key={i}
+          className={
+            link.label.toLowerCase() === page ? 'nav-link-wrapper current' : 'nav-link-wrapper'
+          }>
           <Link className='nav-link' to={link.href}>
             {link.label}
           </Link>

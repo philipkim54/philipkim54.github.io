@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/prettier/pre-commit
+    rev: v2.1.2
+    hooks:
+      - id: prettier
+        name: Prettier
+        args: [
+          '--single-quote',
+          '--jsx-bracket-same-line',
+          '--jsx-single-quote',
+          '--no-bracket-spacing',
+          '--no-semi',
+          '--trailing-comma=all',
+          '--arrow-parens=always',
+          '--print-width=100'
+        ]
+        exclude: "^public/|^docs/"
+

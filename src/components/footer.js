@@ -4,7 +4,6 @@ import './style/footer.less'
 import headshot from '../../static/assets/headshot.jpg'
 import facebook_white from '../../static/assets/f_logo_RGB-White_58.png'
 
-
 const Footer = (props) => (
   <div className='footer'>
     <div className='footer-content'>
@@ -22,7 +21,9 @@ const Footer = (props) => (
       <div className='footer-contact'>
         <div className='footer-email'>
           <i className='fa fa-envelope footer-icon' aria-hidden='true' />
-          <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>philk@nestseekers.com</a>
+          <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>
+            philk@nestseekers.com
+          </a>
         </div>
         <div className='footer-cell'>
           <i className='fa fa-phone fa-lg footer-icon' aria-hidden='true' />
@@ -51,7 +52,10 @@ const Footer = (props) => (
         </div>
 
         <div className='footer-disclaimer-links'>
-          <a href='https://www.dos.ny.gov/licensing/docs/FairHousingNotice_new.pdf' target='_blank' rel='noreferrer'>
+          <a
+            href='https://www.dos.ny.gov/licensing/docs/FairHousingNotice_new.pdf'
+            target='_blank'
+            rel='noreferrer'>
             Fair Housing Notice
           </a>
           <a href='https://www.dos.ny.gov/licensing/docs/2156.pdf' target='_blank' rel='noreferrer'>

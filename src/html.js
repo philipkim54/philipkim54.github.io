@@ -1,27 +1,28 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        <meta charSet='utf-8' />
+        <meta httpEquiv='x-ua-compatible' content='ie=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+        <link
+          href='https://fonts.googleapis.com/css?family=Quicksand|Montserrat|Raleway:300|Josefin+Sans:400|Roboto+Slab:400|Quattrocento|Lora'
+          rel='stylesheet'
         />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand|Montserrat|Raleway:300|Josefin+Sans:400|Roboto+Slab:400|Quattrocento|Lora" rel="stylesheet" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
+        <link
+          rel='stylesheet'
+          href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+          integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN'
+          crossOrigin='anonymous'
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
+        <div key={`body`} id='___gatsby' dangerouslySetInnerHTML={{__html: props.body}} />
         {props.postBodyComponents}
       </body>
     </html>

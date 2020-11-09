@@ -1,90 +1,90 @@
 .footer {
-    background-color: #0D47C3;
-    .footer-content {
-        padding: 45px 20px;
+  background-color: #0d47c3;
+  .footer-content {
+    padding: 45px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    .footer-bio {
+      display: flex;
+      .footer-headshot-wrapper {
+        width: 85px;
+        margin-right: 15px;
         display: flex;
-        justify-content: space-around;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-
-        .footer-bio {
-            display: flex;
-            .footer-headshot-wrapper {
-                width: 85px;
-                margin-right: 15px;
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                .footer-headshot {
-                    border-radius: 50%;
-                    width: 100%;
-                }
-            }
-            .footer-name-wrapper {
-                font-weight: 900;
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                .footer-name {
-                    font-size: 24px;
-                    margin-bottom: 5px;
-                }
-                .footer-company {
-                    font-size: 16px;
-                }
-            }
+        flex-direction: column;
+        align-self: center;
+        .footer-headshot {
+          border-radius: 50%;
+          width: 100%;
         }
-
-        .footer-contact {
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            & > * {
-                margin: 5px 0;
-            }
-            .footer-icon {
-                margin-right: 10px;
-            }
-            .footer-email > a,
-            .footer-cell > a,
-            .footer-office > a {
-                color: white !important;
-            }
+      }
+      .footer-name-wrapper {
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        .footer-name {
+          font-size: 24px;
+          margin-bottom: 5px;
         }
-
-        .footer-social-media {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            .footer-facebook-logo {
-                width: 35px;
-            }
+        .footer-company {
+          font-size: 16px;
         }
-
-        .footer-disclaimers {
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-            .footer-equal-housing-opportunity-wrapper {
-                display: flex;
-                align-self: flex-end;
-                width: 80px;
-                & > svg {
-                    width: 100%;
-                }
-            }
-            .footer-disclaimer-links {
-                display: flex;
-                flex-direction: column;
-                font-size: 12px;
-                & > * {
-                    margin: 3px 0;
-                }
-                & > a {
-                    color: white !important;
-                }
-            }
-        }
+      }
     }
+
+    .footer-contact {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      & > * {
+        margin: 5px 0;
+      }
+      .footer-icon {
+        margin-right: 10px;
+      }
+      .footer-email > a,
+      .footer-cell > a,
+      .footer-office > a {
+        color: white !important;
+      }
+    }
+
+    .footer-social-media {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      .footer-facebook-logo {
+        width: 35px;
+      }
+    }
+
+    .footer-disclaimers {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      .footer-equal-housing-opportunity-wrapper {
+        display: flex;
+        align-self: flex-end;
+        width: 80px;
+        & > svg {
+          width: 100%;
+        }
+      }
+      .footer-disclaimer-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        & > * {
+          margin: 3px 0;
+        }
+        & > a {
+          color: white !important;
+        }
+      }
+    }
+  }
 }

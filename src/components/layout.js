@@ -5,12 +5,10 @@ import Header from './header'
 
 import './style/layout.less'
 
-const Layout = ({ children, page }) => (
+const Layout = ({children, page}) => (
   <>
     <Header page={page} />
-    <div id='app'>
-      {children}
-    </div>
+    <div id='app'>{children}</div>
     <Footer />
   </>
 )
