@@ -20,7 +20,18 @@ const Footer = (props) => (
       </div>
 
       <div className='footer-contact'>
-        footer contact
+        <div className='footer-email'>
+          <i className='fa fa-envelope footer-icon' aria-hidden='true' />
+          <a href='mailto:philk@nestseekers.com' target='_blank' rel='noreferrer'>philk@nestseekers.com</a>
+        </div>
+        <div className='footer-cell'>
+          <i className='fa fa-phone fa-lg footer-icon' aria-hidden='true' />
+          <a href='tel:917-699-3666'>917.699.3666</a>
+        </div>
+        <div className='footer-office'>
+          <i className='fa fa-building fa-lg footer-icon' aria-hiddren='true' />
+          <a href='tel:516-922-2878'>516.922.2878</a>
+        </div>
       </div>
 
       <div className='footer-social-media'>
