@@ -24,5 +24,12 @@
   },
   "devDependencies": {
     "prettier": "2.1.1"
+  },
+  "prettier": {
+    "trailingComma": true,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2
   }
 }
+
