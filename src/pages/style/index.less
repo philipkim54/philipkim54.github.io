@@ -1,112 +1,115 @@
-/* HERO */
-.hero {
-    background-image: url('https://hsimga.imagizer.com/homesnap-stock-photos/HSStockPhotos/11.jpg?w=3000&h=1688&crop=fit&format=auto');
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+.home {
+    /* HERO */
+    .hero {
+        background-image: url('https://hsimga.imagizer.com/homesnap-stock-photos/HSStockPhotos/11.jpg?w=3000&h=1688&crop=fit&format=auto');
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-.hero::before {
-    background-color: #000;
-    opacity: 0.3;
-    content: '';
-    height: 600px;
-    top: 0;
-    width: 100%;
-    position: absolute;
-}
+    .hero::before {
+        background-color: #000;
+        opacity: 0.3;
+        content: '';
+        height: 600px;
+        top: 0;
+        width: 100%;
+        position: absolute;
+    }
 
-.welcome-wrapper {
-    max-width: 500px;
-    position: relative;
-}
+    .welcome-wrapper {
+        max-width: 500px;
+        position: relative;
+    }
 
-.welcome {
-    font-size: 4.2rem;
-    margin: 15px 0;
-}
+    .welcome {
+        font-size: 4.2rem;
+        margin: 15px 0;
+    }
 
-.sub-welcome {
-    font-size: 1.35rem;
-    margin: 20px 0;
-}
+    .sub-welcome {
+        font-size: 1.35rem;
+        margin: 20px 0;
+    }
 
-.main {
-    margin: 100px 60px;
-}
+    .main {
+        margin: 100px 60px;
+        /* BIO */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-/* BIO */
+        .headshot {
+            border-radius: 25%;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .name {
+            margin: 30px 0;
+            font-size: 2.25rem;
+            font-family: 'Roboto Slab', serif;
+            text-transform: uppercase;
+        }
 
-.headshot {
-    border-radius: 25%;
-}
+        .intro {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            font-size: 1.6rem;
+            width: 60%;
+            line-height: 3rem;
+        }
 
-.name {
-    margin: 30px 0;
-    font-size: 2.25rem;
-    font-family: 'Roboto Slab', serif;
-    text-transform: uppercase;
-}
+        .intro::after {
+            bottom: -30px;
+            margin: 4rem 20% 0;
+            width: 60%;
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #006dc7;
+        }
+    }
 
-.intro {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    font-size: 1.6rem;
-    width: 60%;
-    line-height: 3rem;
-}
+    .contact {
+        /* CONTACT */
+        .contact-me {
+            margin: 50px 0 35px;
+            font-size: 1.75rem;
+            font-family: 'Roboto Slab', serif;
+            text-transform: uppercase;
+        }
 
-.intro::after {
-    bottom: -30px;
-    margin: 4rem 20% 0;
-    width: 60%;
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #006dc7;
-}
+        .contact-info {
+            margin-bottom: 25px;
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Quicksand', sans-serif;
+        }
 
-/* CONTACT */
+        .contact-address {
+            font-size: 1.25rem;
+        }
 
-.contact-me {
-    margin: 50px 0 35px;
-    font-size: 1.75rem;
-    font-family: 'Roboto Slab', serif;
-    text-transform: uppercase;
-}
+        .contact-address > a {
+            color: #0F50DB;
+        }
+    }
 
-.contact-info {
-    margin-bottom: 25px;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.contact-address {
-    font-size: 1.25rem;
-}
-
-.contact-address > a {
-    color: #0F50DB;
-}
-
-.facebook-logo {
-    width: 40px;
+    .social-media {
+        .facebook-logo {
+            width: 40px;
+        }
+    }
 }
