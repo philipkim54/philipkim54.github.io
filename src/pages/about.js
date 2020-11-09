@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import './style/about.css'
+import './style/about.less'
 
 
 const About = (props) => (

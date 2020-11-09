@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import './style/listings.css'
+import './style/listings.less'
 
 
 const Listings = (props) => (

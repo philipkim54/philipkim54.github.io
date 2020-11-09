@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from './footer'
 import Header from './header'
 
-import './style/layout.css'
+import './style/layout.less'
 
 const Layout = ({ children, page }) => (
   <>

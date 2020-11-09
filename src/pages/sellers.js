@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import './style/sellers.css'
+import './style/sellers.less'
 
 
 const Sellers = (props) => (

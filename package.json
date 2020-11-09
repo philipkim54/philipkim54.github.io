@@ -14,7 +14,9 @@
     "live": "find docs -type f -delete && cp -R public/* docs/"
   },
   "dependencies": {
-    "gatsby": "^2.24.63",
+    "gatsby": "^2.25.3",
+    "gatsby-plugin-less": "^4.0.6",
+    "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-transformer-sharp": "^2.5.15",
     "react": "^16.12.0",

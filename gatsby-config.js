@@ -1,7 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "Nest Seekers International",
-    description: "Nest Seekers International",
+    title: 'Nest Seekers International',
+    description: 'Nest Seekers International',
   },
-  plugins: ["gatsby-plugin-sharp", "gatsby-transformer-sharp"],
+  plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-less',
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: true,
+      },
+    },
+  ],
 }

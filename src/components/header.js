@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import './style/header.css'
+import './style/header.less'
 import logo from '../../static/assets/phil_kim_logo.jpg'
 
 const LINKS = [
