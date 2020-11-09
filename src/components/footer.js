@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import './style/footer.less'
 import headshot from '../../static/assets/headshot.jpg'
