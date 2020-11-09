@@ -10,6 +10,18 @@
     color: white;
 }
 
+.footer-icon {
+    margin-right: 10px;
+}
+
+.footer-email > a,
+.footer-cell > a,
+.footer-office > a {
+    color: white !important;
+}
+
+/* BIO */
+
 .footer-bio {
     display: flex;
 }
@@ -40,6 +52,8 @@
     font-size: 16px;
 }
 
+/* CONTACT */
+
 .footer-contact {
     font-size: 18px;
 }
@@ -48,12 +62,14 @@
     margin: 5px 0;
 }
 
-.footer-icon {
-    margin-right: 10px;
+/* SOCIAL MEDIA */
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
-.footer-email > a,
-.footer-cell > a,
-.footer-office > a {
-    color: white !important;
+.footer-facebook-logo {
+    width: 35px;
 }

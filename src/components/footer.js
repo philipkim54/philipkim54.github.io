@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import './style/footer.css'
 import headshot from '../../static/images/headshot.jpg'
+import facebook_white from '../../static/images/f_logo_RGB-White_58.png'
 
 
 const Footer = (props) => (
@@ -35,7 +36,9 @@ const Footer = (props) => (
       </div>
 
       <div className='footer-social-media'>
-        footer social media
+        <a href='https://www.facebook.com/philkrealtor' target='_blank' rel='noreferrer'>
+          <img className='footer-facebook-logo' src={facebook_white} alt='Facebook' />
+        </a>
       </div>
 
       <div className='footer-disclaimers'>
