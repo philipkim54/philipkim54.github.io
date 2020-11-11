@@ -6,7 +6,6 @@
   padding: 15px 25px;
   user-select: none;
   background-color: #fff;
-
   .logo-wrapper {
     width: 90px;
     .logo {
@@ -25,73 +24,31 @@
     .nav-link-wrapper {
       margin: 0 20px;
       text-transform: capitalize;
+      .nav-link {
+        transition: opacity 0.4s;
+        &:hover {
+          border-bottom: 3px solid #006dc7;
+        }
+      }
     }
 
     .current {
       border-bottom: 3px solid #006dc7;
     }
-
-    .nav-link {
-      transition: opacity 0.4s;
-    }
-
-    .nav-link:hover {
-      border-bottom: 3px solid #006dc7;
-    }
   }
 }
 
-@media screen and (max-width: 855px) {
-  .home-link {
-    font-size: 26px;
-  }
-  .nav {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 759px) {
-  .home-link {
-    font-size: 22px;
-  }
-  .nav {
-    font-size: 12px;
-  }
-}
-
-/* iphone 6/7/8 plus */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .header {
-    flex-direction: column;
-    padding: 10px 20px;
-    .home-link {
-      font-size: 16px;
-      margin: 10px 0 15px 0;
+    .logo-wrapper {
+      width: 70px;
     }
-    .nav {
-      font-size: 12px;
-    }
-    .nav-link-wrapper {
-      margin: 0 5px;
-    }
-  }
-}
 
-/* iphone 6/7/8 */
-@media screen and (max-width: 375px) {
-  .header {
-    flex-direction: column;
-    padding: 10px 20px;
-    .home-link {
-      font-size: 13px;
-      margin-bottom: 15px;
-    }
     .nav {
-      font-size: 11px;
-      margin-bottom: 10px;
-    }
-    .nav-link-wrapper {
-      margin: 0 5px;
+      font-size: 14px;
+      .nav-link-wrapper {
+        margin: 0 10px;
+      }
     }
   }
 }

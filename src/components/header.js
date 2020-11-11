@@ -20,6 +20,7 @@ const Header = ({page}) => (
         <img className='logo' src={logo} alt='logo' />
       </Link>
     </div>
+
     <div className='nav'>
       {LINKS.map((link, i) => (
         <span
