@@ -11,7 +11,7 @@ const Home = (props) => (
     <div className='home'>
       <div className='hero'>
         <div className='welcome-wrapper'>
-          <div className='welcome'>Welcome.</div>
+          <div className='welcome'>Welcome</div>
           <div className='sub-welcome'>Your new home awaits!</div>
         </div>
       </div>

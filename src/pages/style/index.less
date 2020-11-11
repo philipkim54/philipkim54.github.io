@@ -168,7 +168,7 @@
     }
 
     .main {
-      margin-top: 50px;
+      margin: 50px 60px 0;
       .headshot {
         width: 210px;
       }
@@ -201,5 +201,76 @@
         }
       }
     }
+  }
+}
+
+/* iphone 12 */
+@media screen and (max-width: 390px) {
+  #app {
+    padding-bottom: 25px;
+  }
+
+  .home {
+    .hero {
+      height: 250px;
+      &::before {
+        height: 250px;
+      }
+
+      .welcome-wrapper {
+        .welcome {
+          font-size: 2.75rem;
+          margin: 5px 0;
+        }
+        .sub-welcome {
+          font-size: 1rem;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .main {
+      margin: 50px 35px 0;
+      .headshot {
+        width: 165px;
+      }
+
+      .name {
+        font-size: 1.4rem;
+        margin: 20px 0;
+      }
+
+      .intro {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        width: 100%;
+        text-align: center;
+        &::after {
+          margin: 2rem 20% 0;
+          height: 1px;
+        }
+      }
+    }
+
+    .contact {
+      .contact-me {
+        margin: 25px 0 20px;
+        font-size: 1rem;
+      }
+
+      .contact-info {
+        width: 100%;
+        .contact-address {
+          font-size: 0.65rem;
+        }
+      }
+    }
+  }
+}
+
+/* iphone x */
+@media screen and (max-width: 375px) {
+  .home {
+
   }
 }
