@@ -14,36 +14,38 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    &::before {
+      background-color: #000;
+      opacity: 0.3;
+      content: '';
+      height: 600px;
+      top: 0;
+      width: 100%;
+      position: absolute;
+    }
+    .welcome-wrapper {
+      max-width: 500px;
+      position: relative;
+      .welcome {
+        font-size: 4.2rem;
+        margin: 15px 0;
+      }
+      .sub-welcome {
+        font-size: 1.35rem;
+        margin: 20px 0;
+      }
+    }
   }
-  .hero::before {
-    background-color: #000;
-    opacity: 0.3;
-    content: '';
-    height: 600px;
-    top: 0;
-    width: 100%;
-    position: absolute;
-  }
-  .welcome-wrapper {
-    max-width: 500px;
-    position: relative;
-  }
-  .welcome {
-    font-size: 4.2rem;
-    margin: 15px 0;
-  }
-  .sub-welcome {
-    font-size: 1.35rem;
-    margin: 20px 0;
+
+  // generic container class
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .main {
     margin: 100px 60px;
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     .headshot {
       border-radius: 25%;
     }
@@ -59,15 +61,15 @@
       font-size: 1.6rem;
       width: 60%;
       line-height: 3rem;
-    }
-    .intro::after {
-      bottom: -30px;
-      margin: 4rem 20% 0;
-      width: 60%;
-      content: '';
-      display: block;
-      height: 5px;
-      background-color: #006dc7;
+      &::after {
+        bottom: -30px;
+        margin: 4rem 20% 0;
+        width: 60%;
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #006dc7;
+      }
     }
   }
 
@@ -84,14 +86,20 @@
       display: flex;
       justify-content: space-around;
       font-family: 'Quicksand', sans-serif;
+      .contact-address {
+        font-size: 1.25rem;
+      }
+      .contact-address > a {
+        color: #0f50db;
+      }
     }
-    .contact-address {
-      font-size: 1.25rem;
-    }
-    .contact-address > a {
-      color: #0f50db;
+    .social-media {
+      .facebook-logo {
+        width: 40px;
+      }
     }
   }
+}
 
   .social-media {
     .facebook-logo {
