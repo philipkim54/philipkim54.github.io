@@ -80,6 +80,7 @@
       font-family: 'Roboto Slab', serif;
       text-transform: uppercase;
     }
+
     .contact-info {
       margin-bottom: 25px;
       width: 60%;
@@ -89,10 +90,12 @@
       .contact-address {
         font-size: 1.25rem;
       }
+
       .contact-address > a {
         color: #0f50db;
       }
     }
+
     .social-media {
       .facebook-logo {
         width: 40px;
@@ -135,6 +138,66 @@
       .social-media {
         .facebook-logo {
           width: 35px;
+        }
+      }
+    }
+  }
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+  #app {
+    padding-bottom: 50px;
+  }
+
+  .home {
+    .hero {
+      height: 350px;
+      &::before {
+        height: 350px;
+      }
+
+      .welcome-wrapper {
+        .welcome {
+          font-size: 3.5rem;
+        }
+        .sub-welcome {
+          font-size: 1.15rem;
+        }
+      }
+    }
+
+    .main {
+      margin-top: 80px;
+      .headshot {
+        width: 230px;
+      }
+
+      .name {
+        font-size: 1.75rem;
+      }
+
+      .intro {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        width: 75%;
+        &::after {
+          margin: 2.5rem 20% 0;
+          height: 2px;
+        }
+      }
+    }
+
+    .contact {
+      .contact-me {
+        margin: 35px 0 25px;
+        font-size: 1.4rem;
+      }
+
+      .contact-info {
+        width: 70%;
+        .contact-address {
+          font-size: 0.9rem;
         }
       }
     }
