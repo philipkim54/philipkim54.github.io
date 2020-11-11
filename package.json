@@ -10,7 +10,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "live": "find docs -type f -delete && cp -R public/* docs/"
+    "live": "npm run build && find docs -type f -delete && cp -R public/* docs/"
   },
   "dependencies": {
     "gatsby": "^2.25.3",
