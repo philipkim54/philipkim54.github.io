@@ -45,7 +45,7 @@
   }
 
   .main {
-    margin: 100px 60px;
+    margin: 100px 60px 0;
     .headshot {
       border-radius: 25%;
     }
@@ -101,9 +101,42 @@
   }
 }
 
-  .social-media {
-    .facebook-logo {
-      width: 40px;
+/* ipad pro */
+@media screen and (max-width: 1024px) {
+  .home {
+    .hero {
+      height: 450px;
+      &::before {
+        height: 450px;
+      }
+    }
+
+    .main {
+      .headshot {
+        width: 275px;
+      }
+
+      .intro {
+        font-size: 1.4rem;
+        width: 70%;
+        &::after {
+          height: 3px;
+        }
+      }
+    }
+
+    .contact {
+      .contact-info {
+        .contact-address {
+          font-size: 1.1rem;
+        }
+      }
+
+      .social-media {
+        .facebook-logo {
+          width: 35px;
+        }
+      }
     }
   }
 }
