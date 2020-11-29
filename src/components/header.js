@@ -14,21 +14,25 @@ const LINKS = [
 ]
 
 const Header = ({page}) => (
-  <div className='header'>
-    <div className='logo-wrapper'>
-      <Link className='home-link' to='/'>
-        <img className='logo' src={logo} alt='logo' />
+  <div className='flex items-center justify-center md:justify-between font-quicksand px-6 py-3.5 select-none bg-white'>
+    <div className='w-24 hidden md:inline'>
+      <Link to='/'>
+        <img className='w-full rounded-md' src={logo} alt='logo' />
       </Link>
     </div>
 
-    <div className='nav'>
+    <div className='text-xs md:text-base whitespace-nowrap group'>
       {LINKS.map((link, i) => (
         <span
           key={i}
           className={
-            link.label.toLowerCase() === page ? 'nav-link-wrapper current' : 'nav-link-wrapper'
+            link.label.toLowerCase() === page
+              ? 'transition-opacity duration-500 border-solid border-b-2 md:border-b-4 border-blue-600 mx-2.5 md:mx-5 capitalize'
+              : 'transition-opacity duration-500 mx-2.5 md:mx-5 capitalize'
           }>
-          <Link className='nav-link' to={link.href}>
+          <Link
+            className='transition-opacity duration-500 hover:border-solid hover:border-b-4 hover:border-blue-600 group-hover:opacity-25 nav-link'
+            to={link.href}>
             {link.label}
           </Link>
         </span>
