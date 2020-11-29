@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"/FCf":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),s=t("Bl7J");t("Tltz");n.default=function(e){return i.a.createElement(s.a,{page:"listings"},i.a.createElement("div",{className:"listings"},"Listings placeholder"))}},Tltz:function(e,n,t){}}]);
+//# sourceMappingURL=component---src-pages-listings-js-fabd85ddde20c2136108.js.map
