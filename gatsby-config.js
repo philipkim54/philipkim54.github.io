@@ -8,11 +8,5 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-less',
     'gatsby-plugin-postcss',
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        printRejected: true,
-      },
-    },
   ],
 }
