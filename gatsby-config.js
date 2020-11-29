@@ -7,11 +7,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-less',
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        printRejected: true,
-      },
-    },
+    'gatsby-plugin-postcss',
   ],
 }
