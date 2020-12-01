@@ -5,7 +5,7 @@ import facebook_white from '../../static/assets/f_logo_RGB-White_58.png'
 
 const Footer = (props) => (
   <div className='bg-blue-900'>
-    <div className='flex justify-around font-montserrat text-white py-3.5 lg:py-11 px-3.5 lg:py-5'>
+    <div className='flex justify-around font-montserrat text-white py-3.5 md:py-6 lg:py-11 px-3.5 md:py-5'>
       <div className='flex'>
         <div className='flex-col self-center mr-2 lg:mr-3.5 w-16 lg:w-20'>
           <img className='w-full rounded-full' src={headshot} alt='Phil Kim headshot' />

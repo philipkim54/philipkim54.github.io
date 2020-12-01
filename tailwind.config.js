@@ -18,8 +18,9 @@ module.exports = {
         '2xs': '0.65rem',
       },
       height: {
-        hero: '600px',
         'hero-sm': '250px',
+        'hero-md': '300px',
+        'hero-lg': '600px',
       },
     },
   },

@@ -9,7 +9,7 @@ import facebook from '../../static/assets/f_logo_RGB-Blue_58.png'
 const Home = (props) => (
   <Layout page='home'>
     <div className='home'>
-      <div className='hero flex flex-col justify-center items-center bg-home-hero bg-center bg-cover h-hero-sm md:h-hero'>
+      <div className='hero flex flex-col justify-center items-center bg-home-hero bg-center bg-cover h-hero-sm md:h-hero-md lg:h-hero-lg'>
         <div className='font-montserrat font-bold text-white text-center max-w-lg'>
           <div className='text-4xl md:text-6xl lg:text-7xl my-2.5 md:my-3.5'>Welcome</div>
           <div className='text-md md:text-lg lg:text-xl my-3.5 md:my-5'>Your new home awaits!</div>
