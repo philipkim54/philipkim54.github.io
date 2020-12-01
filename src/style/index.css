@@ -93,10 +93,39 @@ video {
   outline: none;
 }
 
-#app {
-  padding-bottom: 80px;
-}
-
 .nav-link:hover {
   opacity: 1 !important;
+}
+
+.intro::after {
+  bottom: -30px;
+  margin: 4rem 20% 0;
+  width: 60%;
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #006dc7;
+}
+
+/* ipad pro */
+@media screen and (max-width: 1024px) {
+  .intro::after {
+    height: 3px;
+  }
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+  .intro::after {
+    margin: 2.5rem 20% 0;
+    height: 2px;
+  }
+}
+
+/* iphone 12 */
+@media screen and (max-width: 390px) {
+  .intro::after {
+    margin: 2rem 20% 0;
+    height: 1px;
+  }
 }

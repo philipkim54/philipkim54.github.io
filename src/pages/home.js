@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import './style/home.less'
 import headshot from '../../static/assets/headshot.jpg'
 import facebook from '../../static/assets/f_logo_RGB-Blue_58.png'
 
@@ -42,24 +41,24 @@ const Home = (props) => (
 
         <div className='contact'>
           <div className='flex flex-col items-center'>
-            <div className='mt-6 md:mt-12 mr-0 mb-5 md:mb-9 text-base md:text-2xl font-roboto-slab uppercase'>
+            <div className='mt-6 md:mt-12 mr-0 mb-3 md:mb-9 text-lg md:text-2xl font-roboto-slab uppercase'>
               Contact Me
             </div>
 
-            <div className='flex justify-around font-quicksand mb-5 md:mb-6 w-3/5 md: w-full'>
-              <span className='text-2xs md:text-xl'>
+            <div className='flex flex-col md:flex-row justify-around text-center md:text-left font-quicksand mb-5 md:mb-6 w-3/5 md: w-full'>
+              <span className='text-sm md:text-xl mb-1.5 md:mb-0'>
                 Direct:{' '}
                 <a className='text-blue-700' href='tel:917-699-3666'>
                   917.699.3666
                 </a>
               </span>
-              <span className='text-2xs md:text-xl'>
+              <span className='text-sm md:text-xl mb-1.5 md:mb-0'>
                 Office:{' '}
                 <a className='text-blue-700' href='tel:516-922-2878'>
                   516.922.2878
                 </a>
               </span>
-              <span className='text-2xs md:text-xl'>
+              <span className='text-sm md:text-xl mb-1.5 md:mb-0'>
                 <a
                   className='text-blue-700'
                   href='mailto:philk@nestseekers.com'

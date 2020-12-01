@@ -3,10 +3,5 @@ module.exports = {
     title: 'Nest Seekers International',
     description: 'Nest Seekers International',
   },
-  plugins: [
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-less',
-    'gatsby-plugin-postcss',
-  ],
+  plugins: ['gatsby-transformer-sharp', 'gatsby-plugin-sharp', 'gatsby-plugin-postcss'],
 }
