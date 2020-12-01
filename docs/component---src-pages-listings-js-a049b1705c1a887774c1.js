@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"/FCf":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),s=t.n(a),i=t("Bl7J");n.default=function(e){return s.a.createElement(i.a,{page:"listings"},s.a.createElement("div",{className:"listings"},"Listings placeholder"))}}}]);
+//# sourceMappingURL=component---src-pages-listings-js-a049b1705c1a887774c1.js.map
