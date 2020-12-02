@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 
 import headshot from '../../static/assets/headshot.jpg'
 import facebook from '../../static/assets/f_logo_RGB-Blue_58.png'
+import cell_city from '../../static/assets/cell_phone_city.png'
 
 const Home = (props) => (
   <Layout page='home'>
@@ -15,8 +16,8 @@ const Home = (props) => (
         </div>
       </div>
 
-      <div className='mt-12 md:mt-24 mx-9 md:mx-16 mb-0'>
-        <div className='bio'>
+      <div className='mt-12 md:mt-24 mb-0'>
+        <div className='bio mx-9 md:mx-16'>
           <div className='flex flex-col items-center'>
             <div>
               <img
@@ -39,7 +40,7 @@ const Home = (props) => (
           </div>
         </div>
 
-        <div className='contact'>
+        <div className='contact py-6 mx-9 md:mx-16'>
           <div className='flex flex-col items-center'>
             <div className='mt-6 md:mt-12 mr-0 mb-3 md:mb-9 text-lg md:text-2xl font-roboto-slab uppercase'>
               Contact Me
@@ -80,6 +81,38 @@ const Home = (props) => (
         {/* Featured Areas placeholder */}
 
         {/* My Listings placeholder */}
+
+        <div className='sign-up flex pt-6'>
+          <div className='w-1/2 bg-gray-50'>
+            <img className='w-full' src={cell_city} alt='Phone Illustration' />
+          </div>
+          <div className='w-1/2 flex flex-col items-center justify-around bg-blue-700 py-8 px-6'>
+            <div className='sign-up-headers'>
+              <div className='font-montserrat text-3xl text-center text-white mb-2'>
+                Sign up for my newsletter
+              </div>
+              <div className='font-quicksand text-lg text-center text-white'>
+                Get weekly updates about new homes and market activities
+              </div>
+            </div>
+            <div className='name w-11/12'>
+              <input className='w-full h-14 py-1 px-4' placeholder='Your Name' type='text' />
+            </div>
+            <div className='email w-11/12'>
+              <input className='w-full h-14 py-1 px-4' placeholder='Your Email' type='text' />
+            </div>
+            <div className='phone w-11/12'>
+              <input
+                type='text'
+                className='w-full h-14 py-1 px-4'
+                placeholder='Your Phone Number'
+              />
+            </div>
+            <div className='w-36 mt-3 inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 cursor-pointer'>
+              Send
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>
