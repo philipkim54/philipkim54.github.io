@@ -11,6 +11,7 @@ module.exports = {
       }),
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'],
+        lora: ['Lora', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         'roboto-slab': ['Roboto\\ Slab', 'serif'],
       },
