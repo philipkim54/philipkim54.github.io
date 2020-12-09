@@ -119,43 +119,43 @@ export default (props) => {
 
           {/* My Listings placeholder */}
 
-          <div className='sign-up flex pt-6'>
-            <div className='w-1/2 bg-gray-200'>
+          <div className='sign-up flex md:pt-6'>
+            <div className='w-1/2 bg-gray-200 hidden md:block'>
               <img className='w-full' src={cell_city} alt='Phone Illustration' />
             </div>
-            <div className='w-1/2 flex flex-col items-center justify-around bg-blue-700 py-8 px-6'>
-              <div className='sign-up-headers'>
-                <div className='font-montserrat text-3xl text-center text-white mb-2'>
+            <div className='w-full md:w-1/2 flex flex-col items-center justify-around bg-blue-700 py-8 px-6'>
+              <div className='sign-up-headers mb-4 lg:mb-0'>
+                <div className='font-montserrat text-xl md:text-xl lg:text-3xl text-center text-white mb-2'>
                   Sign up for my newsletter
                 </div>
-                <div className='font-quicksand text-lg text-center text-white'>
+                <div className='font-quicksand text-2xs md:text-xs lg:text-lg text-center text-white'>
                   Get weekly updates about new homes and market activities
                 </div>
               </div>
-              <div className='name w-11/12'>
+              <div className='name w-11/12 mb-2 lg:mb-0'>
                 <input
                   type='text'
                   value={name}
                   placeholder='Your Name'
-                  className='w-full h-14 py-1 px-4'
+                  className='w-full h-10 md:h-12 lg:h-14 py-1 px-4 text-xs lg:text-base'
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className='email w-11/12'>
+              <div className='email w-11/12 mb-2 lg:mb-0'>
                 <input
                   type='text'
                   value={email}
                   placeholder='Your Email'
-                  className='w-full h-14 py-1 px-4'
+                  className='w-full h-10 md:h-12 lg:h-14 py-1 px-4 text-xs lg:text-base'
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className='phone w-11/12'>
+              <div className='phone w-11/12 mb-2 lg:mb-0'>
                 <input
                   type='text'
                   value={phone}
                   placeholder='Your Phone Number'
-                  className='w-full h-14 py-1 px-4'
+                  className='w-full h-10 md:h-12 lg:h-14 py-1 px-4 text-xs lg:text-base'
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
@@ -164,13 +164,11 @@ export default (props) => {
                   Please enter your name and your email and/or your phone number.
                 </div>
               )}
-              <div
-                className='w-36 mt-3 inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 cursor-pointer'
-                role='button'
-                tabIndex={0}
+              <button
+                className='w-24 md:w-28 lg:w-36 mt-4 md:mt-3 rounded-md border border-gray-300 shadow-sm px-4 py-1 md:py-2 bg-white text-sm md:text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 cursor-pointer'
                 onClick={onClickSend}>
                 Send
-              </div>
+              </button>
             </div>
           </div>
         </div>
